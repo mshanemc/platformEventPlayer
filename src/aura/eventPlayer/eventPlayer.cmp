@@ -1,0 +1,17 @@
+<aura:component implements="flexipage:availableForRecordHome">
+
+	<aura:attribute name="event" type="string" access="public" required="true"/>
+	<aura:attribute name="title" type="string" access="public" required="true" default="Event Player"/>
+	<aura:attribute name="events" type="string[]" access="public" required="false"/>
+
+	<c:streamer platformEvent="{!v.event}"/>
+	<aura:handler event="ltng:sendMessage" action="{!c.show}"/>
+
+	<lightning:card title="{!v.title}" iconName="utility:broadcast" variant="base">
+		<div class="slds-p-horizontal_medium wrap">
+			<aura:iteration items="{!v.events}" var="event">
+				<p class="slds-text-body_small event">{!event}</p>
+			</aura:iteration>
+		</div>
+	</lightning:card>
+</aura:component>

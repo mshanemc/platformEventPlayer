@@ -1,0 +1,9 @@
+.THIS .wrap {
+	word-wrap: break-word;
+}
+
+.THIS .event{
+	padding-bottom: 10px;
+	padding-top: 10px;
+	border-bottom: 1px solid rgb(221, 219, 218);
+}

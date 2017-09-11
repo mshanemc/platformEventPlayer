@@ -1,0 +1,6 @@
+<design:component label = "Platform Event Player">
+
+	<design:attribute name="event" label="Platform Event Type" Description="API Name of the platform event, including __e" />
+		<design:attribute name="title" label="Card Label" Description="label for the component (card)" />
+
+</design:component>
